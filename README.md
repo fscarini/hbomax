@@ -19,7 +19,7 @@
 - [✨ Features](#features)
 - [📦 Temas abordados](#topics)
 - [🏆 Desafio](#challenges)
-- [🌈 Demonstração](#demo)
+- [🖼️ Demonstração](#demo)
 - [💻 Autora](#author)
 
 <h2 id="features">✨ Features</h2>
@@ -128,19 +128,21 @@ As fontes utilizadas no projeto foram:
 *Para melhor orientação, assista ao vídeo de instruções do desafio, que está disponibilizado no Módulo 3 da Trilha de CSS.*
 
 
-<h2 id="demo">🌈 Demonstração</h2>
+<h2 id="demo"> 🖼️ Demonstração</h2>
 
-Você pode acessar ao resultado final do projeto [clicando aqui](https://micheleambrosio.github.io/hbomax/).
+Você pode acessar ao resultado final do projeto desenvolvido pela autora original (Michele Ambrosio) [clicando aqui](https://micheleambrosio.github.io/hbomax/).
+Para o resultado final desenvolvido por mim mesmo [clique aqui](#).
 
 
-<h2 id="author">💻 Autora</h2>
+<h2 id="author">💻 Autor</h2>
 <p>
-    <img align=left margin=10 width=80 src="https://avatars.githubusercontent.com/u/55519539?v=4"/>
-    <p>&nbsp&nbsp&nbspMichele Queiroz Ambrosio<br>
-    &nbsp&nbsp&nbsp<a href="http://instagram.com/programi_">Instagram</a>&nbsp;|&nbsp;<a href="https://github.com/micheleambrosio">GitHub</a>&nbsp;|&nbsp;<a href="https://www.linkedin.com/in/michele-ambrosio-a4899661/">LinkedIn</a>&nbsp;|&nbsp;<a href="https://www.twitch.tv/michele_ambrosio">Twitch</a></p>
+    <img align=left margin=10 width=80 src="https://avatars.githubusercontent.com/u/98061716?v=4"/>
+    <p>&nbsp&nbsp&nbspFernando Carini<br>
+    &nbsp;<a href="https://github.com/fscarini">GitHub</a>&nbsp;|&nbsp;<a href="https://www.linkedin.com/in/fscarini/">LinkedIn</a>&nbsp;</p>
 </p>
 <br/><br/>
 <p>
 
 ---
 ⌨️ com ❤️ por [Michele Ambrosio](https://github.com/micheleambrosio) 😊
+e forkado com muita dedicação por [Fernando Carini](https://github.com/fscarini) 😂

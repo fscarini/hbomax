@@ -113,6 +113,7 @@
   .initial-title > h2{
     font-weight: 300;
     font-size: 2rem;
+    line-height: 3rem;
   }
 
   .initial-title > h2 > strong{
@@ -144,6 +145,55 @@
   .initial-price > p > strong{
     font-size: 2rem;
   }
+
+  .initial-button {
+    cursor: pointer;
+    margin-top: 1.5rem;
+    color: var(--text-color);
+    text-transform: uppercase;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 600  ;
+    padding: 0.8rem 2.4rem;
+    letter-spacing: 3px;
+    background: var(--btn-bg-color-gradient);
+    outline: 2px solid transparent;
+    transition: outline 1s, background 1s, transform 1s;
+    background-size: 250%;
+    animation: shake-and-pause 2.5s ease-in-out infinite;
+}
+
+.initial-button:hover {
+    outline: 2px solid var(--secondary-color);
+    transform: scale(1.05);
+    background-position: 100%;
+    background: transparent;
+}
+
+  @keyframes shake-and-pause {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: rotate(10deg);
+    }
+    20% {
+        transform: rotate(-5deg);
+    }
+    30% {
+        transform: rotate(5deg);
+    }
+    40% {
+        transform: rotate(-5deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: none;
+    }
+}
+  
 
   @media screen and (max-width: 768px){
     .headerNav-container{

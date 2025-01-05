@@ -179,6 +179,29 @@
   text-align: center;
 }
 
+.buy-now{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 16rem;
+}
+
+.buy-now-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;;
+  max-width: 1000px;
+}
+
+.buy-now-text > h2{
+  color: var(--text-color);
+  font-size: 1.7rem;
+  font-weight: 200;
+  text-align: center;
+}
+
   @keyframes shake-and-pause {
     0%, 100% {
         transform: rotate(0deg);

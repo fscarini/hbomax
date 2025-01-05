@@ -148,7 +148,7 @@
 
   .initial-button {
     cursor: pointer;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
     color: var(--text-color);
     text-transform: uppercase;
     border-radius: 50px;
@@ -168,6 +168,15 @@
     transform: scale(1.05);
     background-position: 100%;
     background: transparent;
+}
+
+.initial-text{
+  color: var(--text-color);
+  font-size: 1.1rem;
+  font-weight: lighter;
+  margin-top: 3rem;
+  width: 300px;
+  text-align: center;
 }
 
   @keyframes shake-and-pause {

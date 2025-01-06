@@ -131,7 +131,7 @@ As fontes utilizadas no projeto foram:
 <h2 id="demo"> 🖼️ Demonstração</h2>
 
 Você pode acessar ao resultado final do projeto desenvolvido pela autora original (Michele Ambrosio) [clicando aqui](https://micheleambrosio.github.io/hbomax/).
-Para o resultado final desenvolvido por mim mesmo [clique aqui](#).
+Para o resultado final desenvolvido por mim mesmo [clique aqui](https://fscarini.github.io/hbomax/).
 
 
 <h2 id="author">💻 Autor</h2>

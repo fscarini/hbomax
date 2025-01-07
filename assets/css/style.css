@@ -14,6 +14,10 @@
   background: var(--secondary-color);
 }
 
+body{
+  background: var(--first-section-bg-color);;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -35,21 +39,25 @@ header {
   text-transform: uppercase;
   color: #ffffff;
   max-width: 18rem;
+  gap: 16px;
   width: 100%;
 }
 
 .nav-right a {
   font-weight: 600;
   padding: 3px;
-  font-size: 14px;
+  font-size:0.8rem;
+  letter-spacing: 2px;
 }
 
 .nav-right button {
   color: #ffffff;
   text-transform: uppercase;
-  font-weight: 600;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 2px;
   background: var(--tertiary-color);
-  width: 50%;
+  width: 60%;
   border-radius: 16px;
   transition: all 0.5s ease-out;
 }
@@ -67,13 +75,12 @@ header {
 }
 
 .initial {
-  height: 150vh;
+  height: 120vh;
   padding-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background: var(--first-section-bg-color);
   background-size: 200% 200%;
   animation: colorTransition 6s ease infinite; /* Animação infinita */
 }
@@ -161,14 +168,14 @@ header {
   font-size: 2rem;
 }
 
-.initial-button {
+.button-layout {
   cursor: pointer;
   margin-top: 2rem;
   color: var(--text-color);
   text-transform: uppercase;
   border-radius: 50px;
   font-size: 1.1rem;
-  font-weight: 600;
+  font-weight: 800;
   padding: 0.8rem 2.4rem;
   letter-spacing: 3px;
   background: var(--btn-bg-color-gradient);
@@ -178,7 +185,7 @@ header {
   animation: shake-and-pause 2.5s ease-in-out infinite;
 }
 
-.initial-button:hover {
+.button-layout:hover {
   outline: 2px solid var(--secondary-color);
   transform: scale(1.05);
   background-position: 100%;
@@ -218,7 +225,7 @@ header {
 .buy-now-text > h2 {
   color: var(--text-color);
   font-size: 2rem;
-  font-weight: 200;
+  font-weight: 600;
   text-align: center;
 }
 
@@ -247,6 +254,134 @@ header {
   }
 }
 
+.buy-now-cards{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 20px 0;
+  gap: 20px;
+  perspective: 2000px;
+  perspective-origin: top;
+}
+
+.card-item{
+  font-family: 'Quicksand', sans-serif;
+  color: var(--text-color);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background: var(--card-bg-color);
+  width: 600px;
+  height: 100%;
+  max-height: 700px;
+  padding: 50px;
+  gap: 30px;
+  font-size: 1.5rem;
+  transition: transform 0.8s ease-in-out;
+}
+
+.card-info{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card-price{
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+.card-price > strong{
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--secondary-color);
+}
+
+.card-list{
+  height: 400px;
+  font-size: 1.3rem;
+}
+
+.card-list > li{
+  padding: 10px;
+}
+
+.card-list li::before{
+  content: "+ ";
+}
+
+.card-button{
+  align-self: center;
+  animation: none;
+  font-size: 0.7rem;
+  width: 100%;
+  max-width: 600px;
+}
+
+.buy-now-cards:has(.card-item:nth-child(1):hover)
+  .multi-card{
+  transform: rotateY(-45deg);
+}
+
+.buy-now-cards:has(.card-item:nth-child(2):hover)
+  .mobile-card{
+  transform: rotateY(45deg);
+}
+
+@media screen and (max-width: 1219px){
+  .initial{
+    height: 100vh;
+  }
+
+  .initial::after{
+    height: 100vh;
+  }
+
+  .buy-now{
+    height: 150vh;
+  }
+
+  .buy-now-text > h2{
+    font-size: 1.3rem;
+  }
+
+  .card-item{
+    max-height: 600px;
+    transition: none;
+  }
+
+  .buy-now-cards:has(.card-item:nth-child(1):hover)
+    .multi-card{
+  transform: none;
+  }
+
+  .buy-now-cards:has(.card-item:nth-child(2):hover)
+    .mobile-card{
+  transform: none;
+  }
+
+  .card-info{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-item > .card-list > li{
+    font-size: 0.7rem;
+  }
+
+  .card-list{
+    height: 250px;
+  }
+
+  .card-item > button{
+    max-width: 400px;
+  }
+
+}
+
 @media screen and (max-width: 768px) {
   .headerNav-container {
     flex-direction: column;
@@ -256,7 +391,7 @@ header {
   }
 
   .initial-title {
-    width: 350px;
+    width: 320px;
     max-width: 100%;
   }
 
@@ -266,5 +401,13 @@ header {
 
   .initial-title > h2 > strong {
     font-size: 2rem;
+  }
+
+  .buy-now{
+    height: 200vh;
+  }
+
+  .card-item{
+    padding: 12px;
   }
 }

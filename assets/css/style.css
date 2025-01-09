@@ -430,6 +430,8 @@ footer > h3{
 footer > .social-medias{
   padding: 50px;
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 50px;
   cursor: pointer;
 }
@@ -615,5 +617,9 @@ footer > .social-medias{
   .card-button{
     width: 80%;
     font-size: 0.5rem;
+  }
+
+  footer > .social-medias{
+    gap: 20px;
   }
 }

@@ -397,6 +397,49 @@ header {
   bottom: 0;
 }
 
+footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-text{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.footer-text > a{
+  font-weight: 800;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: var(--link-color);
+}
+
+footer > h3{
+  margin-top: 12px;
+  color: var(--link-color);
+  font-weight: 300;
+  font-size: 0.8rem;
+  padding: 20px;
+}
+
+footer > .social-medias{
+  padding: 50px;
+  display: flex;
+  gap: 50px;
+  cursor: pointer;
+}
+
+.social-medias > img{
+  width: 100%;
+  height: 20px;
+  object-fit: cover;
+}
+
 
 @media screen and (max-width: 1219px){
   .initial{
